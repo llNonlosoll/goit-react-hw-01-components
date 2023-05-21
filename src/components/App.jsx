@@ -1,4 +1,3 @@
-import { AppContainer } from './App.styled';
 import { Profile } from './Profile/Profile';
 import user from '../data_json/user.json';
 import { Statistics } from './Statistics/Statistics';
@@ -10,7 +9,17 @@ import transactionData from '../data_json/transactions.json';
 
 export const App = () => {
   return (
-    <AppContainer>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 15,
+        fontSize: 40,
+        color: '#010101',
+      }}
+    >
       <Profile
         userName={user.username}
         tag={user.tag}
@@ -21,6 +30,6 @@ export const App = () => {
       <Statistics items={data} title={data.title} />
       <FriendList items={friendsData} />
       <TransactionHistory items={transactionData} />
-    </AppContainer>
+    </div>
   );
 };
