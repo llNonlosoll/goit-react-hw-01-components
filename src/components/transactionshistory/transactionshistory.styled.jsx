@@ -22,3 +22,17 @@ export const TableHeaderRow = styled.tr`
     border-right: 1px solid #ffffff;
   }
 `;
+
+export const TableHeaderElement = styled.th`
+  border-bottom: 1px solid #111111;
+`;
+
+export const TableBody = styled.tbody`
+  font-size: 20px;
+
+  color: #111111;
+
+  & tr:nth-child(2n + 1) {
+    background-color: #c3c2c2;
+  }
+`;
