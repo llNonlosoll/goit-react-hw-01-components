@@ -11,26 +11,24 @@ import {
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <div>
-      <Table>
-        <TableHead>
-          <TableHeaderRow>
-            <TableHeaderElement>Type</TableHeaderElement>
-            <TableHeaderElement>Amount</TableHeaderElement>
-            <TableHeaderElement>Currency</TableHeaderElement>
-          </TableHeaderRow>
-        </TableHead>
-        <TableBody>
-          {items.map(item => (
-            <TableRaw key={item.id}>
-              <TableData>{item.type}</TableData>
-              <TableData>{item.amount}</TableData>
-              <TableData>{item.currency}</TableData>
-            </TableRaw>
-          ))}
-        </TableBody>
-      </Table>
-    </div>
+    <Table>
+      <TableHead>
+        <TableHeaderRow>
+          <TableHeaderElement>Type</TableHeaderElement>
+          <TableHeaderElement>Amount</TableHeaderElement>
+          <TableHeaderElement>Currency</TableHeaderElement>
+        </TableHeaderRow>
+      </TableHead>
+      <TableBody>
+        {items.map(item => (
+          <TableRaw key={item.id}>
+            <TableData>{item.type}</TableData>
+            <TableData>{item.amount}</TableData>
+            <TableData>{item.currency}</TableData>
+          </TableRaw>
+        ))}
+      </TableBody>
+    </Table>
   );
 };
 
