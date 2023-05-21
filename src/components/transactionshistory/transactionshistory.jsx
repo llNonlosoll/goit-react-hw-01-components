@@ -5,6 +5,8 @@ import {
   TableHeaderRow,
   TableHeaderElement,
   TableBody,
+  TableRaw,
+  TableData,
 } from './transactionshistory.styled';
 
 export const TransactionHistory = ({ items }) => {
@@ -20,11 +22,11 @@ export const TransactionHistory = ({ items }) => {
         </TableHead>
         <TableBody>
           {items.map(item => (
-            <tr key={item.id}>
-              <td>{item.type}</td>
-              <td>{item.amount}</td>
-              <td>{item.currency}</td>
-            </tr>
+            <TableRaw key={item.id}>
+              <TableData>{item.type}</TableData>
+              <TableData>{item.amount}</TableData>
+              <TableData>{item.currency}</TableData>
+            </TableRaw>
           ))}
         </TableBody>
       </Table>
