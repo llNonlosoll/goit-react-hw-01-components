@@ -7,7 +7,7 @@ import {
   TableData,
   TableHeaderElement,
   TableHeaderRow,
-} from './Transactionhistory.styled';
+} from './transactionhistory.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
