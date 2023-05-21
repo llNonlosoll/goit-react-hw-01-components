@@ -6,6 +6,7 @@ export const Container = styled.ul`
   gap: 10px;
 
   width: 300px;
+  margin-top: 10px;
   padding: 10px;
 
   list-style: none;
