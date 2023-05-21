@@ -26,6 +26,10 @@ export const IsOnline = styled.span`
 export const Image = styled.img`
   display: block;
   width: 80px;
+
+  background-color: #faff95;
+  border: 1px solid #111111;
+  border-radius: 4px;
 `;
 
 export const Name = styled.p`

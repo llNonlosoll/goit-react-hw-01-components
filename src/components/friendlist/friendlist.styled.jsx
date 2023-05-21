@@ -21,12 +21,3 @@ export const Element = styled.li`
   border: 1px solid black;
   border-radius: 4px;
 `;
-
-export const Image = styled.img`
-  display: block;
-  width: 48px;
-`;
-
-export const Name = styled.p`
-  font-size: 30px;
-`;
