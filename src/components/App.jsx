@@ -5,8 +5,8 @@ import { Statistics } from './statistics/statistics';
 import data from '../data_json/data.json';
 import { FriendList } from './friendlist/friendlist';
 import friendsData from '../data_json/friends.json';
-// import { TransactionHistory } from './transactions/transactionhistory';
-// import transactionData from '../data_json/transactions.json';
+import { TransactionHistory } from './transactionshistory/transactionshistory';
+import transactionData from '../data_json/transactions.json';
 
 export const App = () => {
   return (
@@ -20,7 +20,7 @@ export const App = () => {
       />
       <Statistics items={data} title={data.title} />
       <FriendList items={friendsData} />
-      {/* <TransactionHistory items={transactionData} /> */}
+      <TransactionHistory items={transactionData} />
     </AppContainer>
   );
 };
