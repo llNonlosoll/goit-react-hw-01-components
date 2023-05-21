@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-export const Container = styled.ul`
+export const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
 
   width: 300px;
   margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
 
   list-style: none;
