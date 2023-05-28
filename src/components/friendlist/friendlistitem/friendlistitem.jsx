@@ -4,7 +4,7 @@ import { Container, IsOnline, Image, Name } from './friendlistitem.styled';
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <Container>
-      <IsOnline isOnline={isOnline}></IsOnline>
+      <IsOnline isOnline={isOnline} />
       <Image src={avatar} alt="User avatar" />
       <Name>{name}</Name>
     </Container>
